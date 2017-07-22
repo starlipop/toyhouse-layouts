@@ -1,0 +1,681 @@
+/*************************************************************************/
+/* character css by cy @ toyhou.se  
+/* updated with permission by starlipop @ toyhou.se
+
+
+/*************************************************************************/
+/* sidebar */
+
+.side-nav li.header,
+.display-user img,
+.display-character img {
+    display: none;
+}
+
+.side-nav .display-character {
+    text-align: right;
+    font-size: 3em;
+    float: right;
+    clear: both;
+}
+
+.side-nav .display-character a,
+.side-nav .display-user a {
+    padding-left: 0;
+    padding-right: 10px;
+}
+
+#sidebar {
+    font-family: "Lucida Grande", arial, Georgia, verdana, sans-serif !important;
+    text-align: right;
+    min-width: 30%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-right: 20px;
+    background-color: #335c68
+}
+
+#sidebar a {
+    color: #64a6a8;
+    background-color: transparent;
+}
+
+#sidebar a:hover {
+    color: #f92269;
+    background-color: transparent;
+}
+
+#sidebar li.active a {
+    color: #c4efd6;
+    background-color: #64a6a8;
+    padding-right: 30px;
+    margin-right: -20px;
+    width: 100%;
+    border-radius: 15px 0 0 15px;
+}
+
+
+.side-nav li.subheader {
+    height: 150px;
+    width: 150px;
+    background-image: url('http://i.imgur.com/OcWG3Dh.jpg');
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    font-size: 0px;
+    float: right;
+    clear: both;
+    margin-right: 10px;
+}
+
+.side-nav .display-user {
+    text-align: right;
+    font-size: 3em;
+    line-height: 2.5em;
+    float: right;
+    clear: both;
+    color: #c4efd6 !important;
+}
+
+.side-nav .display-user img,
+.side-nav li.divider {
+    display: none;
+}
+
+.side-nav li.blurb {
+    float: right;
+    clear: both;
+    color: #f7f7e7;
+    text-align: right;
+    margin-bottom: 3em;
+}
+
+.side-nav li.blurb a {
+    padding: 0;
+}
+
+.side-nav li a {
+    float: right;
+    clear: both;
+    padding-right: 10px;
+}
+
+
+/*************************************************************************/
+/* mobile menu */
+
+.nav-mobile-menu {
+    background-color: #335c68;
+    border-color: #64a6a8;
+}
+
+
+/*************************************************************************/
+/* theme fixing */
+
+/* This fixes the colours for some elements which change colours with the
+   used Toyhouse theme. If you want to change the styling of something 
+   specific, you can change it here or add it after this section. */
+
+.modal-content,
+.form-control,
+.form-control:active,
+.form-control:focus {
+    background-color: #f7f7e7;
+    border-color: #f7f7e7;
+    color: #335c68;
+}
+
+.card {
+    background-color: white;
+    border-color: transparent;
+}
+
+.card .bg-faded,
+.card .card-block {
+    background-color: transparent;
+    color: inherit;
+    border: none;
+}
+
+.btn-danger,
+.btn-warning,
+.btn-outline-danger:hover,
+.btn-outline-warning:hover,
+.card-danger,
+.card-warning,
+.alert-danger,
+.alert-warning {
+    background-color: #f92269;
+    border-color: #f92269;
+    color: #f7f7e7;
+}
+
+.btn-danger:hover,
+.btn-warning:hover,
+.btn-outline-danger,
+.btn-outline-warning,
+.card-outline-danger,
+.card-outline-warning {
+    background-color: transparent;
+    border-color: #f92269;
+    color: #f92269;
+}
+
+.badge-default,
+.btn-secondary,
+.btn-secondary.form-control,
+.btn-info,
+.btn-outline-secondary:hover,
+.btn-outline-info:hover,
+.card-info,
+.alert-info,
+.btn.btn-default {
+    background-color: #64a6a8;
+    border-color: #64a6a8;
+    color: #f7f7e7;
+}
+
+.btn-secondary:hover,
+.btn-secondary:hover.form-control,
+.btn-info:hover,
+.btn-outline-secondary,
+.btn-outline-info,
+.card-outline-secondary,
+.card-outline-info {
+    background-color: transparent;
+    border-color: #64a6a8;
+    color: #64a6a8;
+}
+
+.btn-success,
+.btn-success.form-control,
+.btn-outline-success:hover,
+.card-success,
+.alert-success,
+.btn.btn-default:hover {
+    background-color: #c4efd6;
+    border-color: #c4efd6;
+    color: #64a6a8;
+}
+
+.btn-success:hover,
+.btn-success.form-control:hover,
+.btn-outline-success,
+.card-outline-success {
+    background-color: transparent;
+    border-color: #c4efd6;
+    color: #64a6a8;
+}
+
+.card-primary,
+.btn-outline-primary:hover {
+    background-color: #335c68;
+    border-color: #335c68;
+    color: #64a6a8;
+}
+
+.card-outline-primary,
+.btn-outline-primary {
+    background-color: transparent;
+    border-color: #335c68;
+    color: #335c68;
+}
+
+.btn-link,
+a {
+    color: #64a6a8;
+}
+
+a:hover,
+.btn-link:hover,
+.field-value a:hover {
+    color: #f92269;
+    text-decoration: none;
+}
+
+hr {
+    border-style: dashed;
+    border-color: #f92269;
+}
+
+h1,
+h1 a,
+h2,
+h2 a,
+h3,
+h3 a h4,
+h4 a,
+h5,
+h5 a,
+h6,
+h6 a {
+    font-family: "Lucida Grande", arial, Georgia, verdana, sans-serif !important;
+    background-color: transparent;
+    border: 0px;
+    color: #64a6a8;
+}
+
+code {
+    color: #f92269;
+    background-color: #daeadb;
+}
+
+
+/*************************************************************************/
+/* timestamp (unless otherwise specified) */
+
+abbr {
+    color: #64a6a8;
+}
+
+
+/*************************************************************************/
+/* tooltips (the little bubble which appears when hovering over dates) */
+
+.tooltip.bs-tether-element-attached-bottom .tooltip-inner:before {
+    border-top-color: #64a6a8;
+}
+
+.tooltip-inner {
+    color: #c4efd6;
+    background-color: #64a6a8;
+}
+
+
+/*************************************************************************/
+/* content */
+
+#main {
+    background-color: #f7f7e7;
+    border-color: #f7f7e7;
+    color: #335c68;
+}
+
+#content {
+    font-family: "Lucida Grande", arial, Georgia, verdana, sans-serif !important;
+    float: left;
+    margin: 0 auto;
+    max-width: 70%;
+    padding: 50px 1em;
+    color: #335c68;
+}
+
+blockquote {
+    background-color: transparent;
+    color: #335c68;
+    border-left: 5px solid #64a6a8;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.stuff {
+    font-family: "Lucida Grande", arial, Georgia, verdana, sans-serif !important;
+    /*width: 60%;*/
+    text-align: justify;
+    padding-bottom: 30px;
+    color: #335c68;
+}
+
+.stuff hr {
+    margin-bottom: 10px !important;
+    border-style: dashed;
+    border-color: #f92269;
+}
+
+.stuff a {
+    color: #64a6a8;
+}
+
+.stuff a:hover {
+    color: #c4efd6;
+}
+
+.stuff h1,
+.stuff h2,
+.stuff h3,
+.stuff h4,
+.stuff h5 {
+    color: #64a6a8;
+}
+
+
+/*************************************************************************/
+/* character divs */
+
+
+/* You can get rid of the character stats section by adding this code & removing the code between "scroll down...here"
+
+    .character-profile .profile-name-section, 
+    .character-profile .profile-info-section {
+        display: none;
+    }
+
+    (profile-name-section removes the character name & owner; profile-info-section removes the stats box)
+
+
+    Or you can replace the entire character stats section with a picture of
+    your choice
+    Remove everything between here and... (scroll down) */
+
+
+.character-profile .profile-name-section a,
+.character-profile .profile-info-section a {
+    color: #64a6a8;
+}
+
+.character-profile .profile-name-section a:hover,
+.character-profile .profile-info-section a:hover {
+    color: #f92269;
+}
+
+.character-profile .profile-info-section .card {
+    border: none;
+    background-color: #335c68;
+    color: #64a6a8;
+}
+
+.field-title {
+    color: #f7f7e7;
+}
+
+.character-profile .profile-info-section abbr {
+    color: #c4efd6;
+} 
+
+
+/* ...here and replace with the following:
+   (changing the image url and height to suit your image & removing min-height if needed,
+   and adding background-repeat to modify if the image will tile or not)
+
+.profile-info-section .card
+{
+    border: 0px;
+    background-color: transparent;
+    border-radius: 3px;
+    font-size: 0px;
+    color: transparent;
+    min-height: 100%;
+    height: auto;
+    background-image: url('image url here');
+}
+*/
+
+
+/* If you want only the stats box with the background image, add in this code too:
+
+.character-profile .profile-info-section {
+    min-width: 100%;
+}
+
+.character-profile .profile-name-section {
+    display: none;
+}
+*/
+
+
+dt.field-title.fr-view {
+    color: #335c68;
+}
+
+dd.field-value.fr-view {
+    color: #64a6a8;
+} 
+
+
+/*************************************************************************/
+/* pagination (page navigation) & gallery edit buttons (only visible to owner) */
+
+.character-profile .profile-gallery-title .btn,
+.gallery-row .gallery-item .gallery-edit .btn,
+.btn.btn-primary {
+    background-color: #335c68;
+    border: 1px dashed #64a6a8 !important;
+    color: #c4efd6;
+}
+
+.page-item.active .page-link {
+    background-color: #335c68;
+    border-color: #335c68;
+    color: #c4efd6;
+}
+
+.page-link,
+.page-item.disabled .page-link {
+    background-color: #64a6a8;
+    border-color: #64a6a8;
+    color: #c4efd6;
+}
+
+.page-link:hover {
+    background-color: #c4efd6;
+    border-color: #64a6a8;
+    color: #64a6a8;
+}
+
+.character-profile .profile-gallery-title .btn:hover,
+.gallery-row .gallery-item .gallery-edit .btn:hover,
+.btn-primary:hover {
+    background: #64a6a8;
+    border-color: #64a6a8;
+    color: #c4efd6;
+}
+
+
+/*************************************************************************/
+/* gallery images */
+
+.th,
+.img-thumbnail {
+    border: 0px;
+    background-color: transparent;
+    border-radius: 50% 3px 3px 50%;
+}
+
+.gallery-thumb .thumb-image>a,
+.img-thumbnail img,
+.forum-post-avatar img,
+.bulletin-avatar,
+img.mw-100 {
+    border-radius: 50% 3px 3px 50%;
+}
+
+.gallery-thumb .thumb-image>a:hover {
+    box-shadow: 0 0 3px #64a6a8;
+}
+
+.gallery-thumb .thumb-image>.img-thumbnail {
+    width: auto;
+}
+
+
+/*************************************************************************/
+/* tags (formerly labels) */
+
+.character-profile .profile-tags-content {
+    max-width: 33%;
+    overflow: hidden;
+    border: none;
+}
+
+.character-profile .profile-tags-content .badge,
+.character-profile .profile-tags-content .badge a,
+.character-profile .profile-tags-content .badge a:hover {
+    background-color: transparent;
+    border: 0px;
+}
+
+
+/*************************************************************************/
+/* image warnings: (sansitive content/nudity, gore) */
+
+.gallery-row .gallery-item .gallery-edit .badge.badge-default {
+    background: #64a6a8;
+}
+
+.gallery-row .gallery-item .gallery-edit .badge.badge-warning {
+    background: #335c68;
+}
+
+
+/*************************************************************************/
+/* hiding */
+
+#header,
+#footer,
+.profiler {
+    display: none;
+}
+
+
+/*************************************************************************/
+/* image gallery page */
+
+.image-bottom-bar,
+.mfp-wrap .image-bottom-bar .card {
+    color: #335c68;
+}
+
+.mfp-wrap .image-bottom-bar {
+    color: #c4efd6;
+}
+
+.mfp-bg.mfp-ready {
+    background: #0c343a;
+}
+
+.mfp-wrap .mfp-content {
+    background-color: transparent;
+    box-shadow: 0 0 8px #0c343a;
+}
+
+.mfp-wrap .mfp-content .mfp-figure {
+    background-color: #f7f7e7;
+}
+
+.mfp-wrap .mfp-content .mfp-figure figcaption .mfp-bottom-bar {
+    border-top: 3px solid #64a6a8!important;
+    background: #f7f7e7;
+}
+
+.mfp-wrap .image-left-bar,
+.mfp-wrap .image-left-bar h2 {
+    background-color: #335c68;
+}
+
+.image-bottom-bar h2 {
+    border-bottom: 1px dashed #64a6a8;
+}
+
+.image-bottom-bar .image-left-bar.image-collapsed .row>div,
+.image-bottom-bar .image-left-bar {
+    border-color: #64a6a8;
+}
+
+
+/*************************************************************************/
+/* comments */
+
+.comment .comment-replies,
+.forum-post .comment-replies {
+    border-color: #daeadb;
+}
+
+.btn.btn-default.toggle-off,
+.forum-post .forum-post-post .forum-post-footer .forum-post-edited {
+    background-color: #daeadb;
+    border-color: #daeadb;
+    color: #64a6a8;
+}
+
+.toggle-group .btn {
+    border: transparent!important;
+}
+
+.forum-post .forum-post-post .forum-post-caption .forum-post-user-link {
+    background: transparent;
+}
+
+.btn.btn-sm.btn-primary.character-name-badge {
+    border: 0px solid transparent!important;
+}
+
+.btn.btn-sm.btn-primary.character-name-badge:hover {
+    color: #f7f7e7;
+}
+
+
+/*************************************************************************/
+/* links page */
+
+.links-controls.card {
+    border: 1px solid white;
+    background: white;
+}
+
+.link-panel:before {
+    border-color: white;
+}
+
+.links-controls.card .bg-faded {
+    background: transparent;
+}
+
+
+/* links page: character selection popup */
+
+#user-character-selector .user-character-selector-body {
+    background: #f7f7e7;
+    border: none;
+    border-bottom-right-radius: 5px;
+}
+
+#user-character-selector .user-character-selector-left.user-character-selector-header,
+#user-character-selector .user-character-selector-right.user-character-selector-header {
+    background: #335c68;
+    border-color: #335c68;
+}
+
+#user-character-selector .user-character-selector-left.user-character-selector-header {
+    border-top-left-radius: 3px;
+}
+
+#user-character-selector .user-character-selector-right.user-character-selector-header {
+    border-top-right-radius: 3px;
+}
+
+#user-character-selector .user-character-selector-sidebar {
+    border-bottom-left-radius: 5px;
+}
+
+#user-character-selector .user-character-selector-sidebar,
+#user-character-selector .user-character-selector-left.user-character-selector-header .user-character-selector-title,
+h3.user-character-selector-title,
+h3.user-character-selector-title a,
+#user-character-selector .user-character-selector-sidebar .user-character-selector-folder-list>.list-group-item,
+#user-character-selector .user-character-selector-sidebar .user-character-selector-folder-list>.list-group-item a,
+#user-character-selector .user-character-selector-sidebar .user-character-selector-folder-list>.list-group-item.active>a {
+    color: #64a6a8;
+    background: #335c68;
+    border: none;
+}
+
+#user-character-selector .user-character-selector-sidebar .user-character-selector-folder-list>.list-group-item a:hover,
+h3.user-character-selector-title a:hover {
+    color: #f92269;
+    background-color: transparent;
+}
+
+.character-name-number {
+    font-size: small;
+    color: #64a6a8;
+}
+
+
+/*avoid changing/removing this, it will cause a weird outline to appear around the popup*/
+
+#user-character-selector .modal-content {
+    background: transparent;
+    border-color: transparent;
+}
