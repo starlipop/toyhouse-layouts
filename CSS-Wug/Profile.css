@@ -54,11 +54,6 @@
 }
 
 
-/* .side-nav li.header creates the image over the username (and works on both Character & Profile pages), 
-    .side-nav li.subheader creates the image under the username (and only works on Character pages)
-    
-    Remember to remove one of the images when using this CSS on your Character pages!*/
-
 .side-nav li.header {
     height: 150px;
     width: 150px;
@@ -73,19 +68,6 @@
     margin-right: 10px;
 }
 
-.side-nav li.subheader {
-    height: 150px;
-    width: 150px;
-    background-image: url('http://i.imgur.com/OcWG3Dh.jpg');
-    border-bottom-left-radius: 50%;
-    border-top-left-radius: 50%;
-    border-bottom-right-radius: 3px;
-    border-top-right-radius: 3px;
-    font-size: 0px;
-    float: right;
-    clear: both;
-    margin-right: 10px;
-}
 
 .side-nav .display-user {
     text-align: right;
